@@ -112,7 +112,7 @@ function slice(array = [], from = 0, to = array.length) {
 function createProxy(obj) {
     return new Proxy(obj, {
         set(target, prop, value) {
-            return target[prop] = Math.pow(value, 2);
+            return target[prop] = value * value;
         }
     });
 }
