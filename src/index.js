@@ -99,7 +99,8 @@ function deleteTextNodes(where) {
     let elems = where.childNodes;
 
     for (let i = 0; i < elems.length; i++) {
-        if (elems[i] instanceof Node) where.removeChild(elems[i]);
+        if (elems[i] instanceof Node)
+            where.removeChild(elems[i]);
     }
 }
 
